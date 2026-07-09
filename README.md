@@ -20,20 +20,23 @@ and check guests out — all with a dark, gold-accented UI theme.
 ## Project Structure
 
 ```
-hotel-management-system/
-├── .vscode/
-│   ├── launch.json       # VS Code run/debug configuration
-│   └── settings.json     # Points VS Code to your JavaFX SDK jars
-├── src/
-│   └── Main.java          # Application entry point + all UI logic
-├── style.css               # JavaFX stylesheet (dark theme, gold accents)
+hotel-management-system/            (repo root)
+├── Hotel_management/
+│   ├── .vscode/
+│   │   ├── launch.json             # VS Code run/debug configuration
+│   │   └── settings.json           # Points VS Code to your JavaFX SDK jars
+│   ├── Main.java                    # Application entry point + all UI logic
+│   └── style.css                    # JavaFX stylesheet (dark theme, gold accents)
 └── README.md
 ```
 
-> **Note:** `Main.java` currently loads `style.css` via
-> `scene.getStylesheets().add("style.css")`, so `style.css` must sit in the
-> same folder the app is run from (or on the classpath) — see
-> [Troubleshooting](#troubleshooting) if the styling doesn't apply.
+Important: Everything (the code, the .vscode config, and the
+stylesheet) lives inside the Hotel_management folder — not in the
+repo root. When you clone/download this repo, make sure you open the
+Hotel_management folder itself in VS Code (File → Open Folder →
+select Hotel_management), not the outer hotel-management-system
+repo folder. Otherwise VS Code won't find .vscode/launch.json and the
+"Run JavaFX" option won't appear.
 
 ## Prerequisites
 
