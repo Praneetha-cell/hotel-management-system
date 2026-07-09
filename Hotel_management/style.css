@@ -1,0 +1,96 @@
+.root {
+    -fx-background-color: linear-gradient(to right, #141e30, #243b55);
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+.title {
+    -fx-text-fill: gold;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #ff7b00;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ffa500;
+}
+
+.text-field, .combo-box {
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+    -fx-padding: 8;
+    -fx-pref-height: 38px;
+}
+
+.combo-box .list-cell {
+    -fx-font-size: 16px;
+    -fx-padding: 6 8 6 8;
+    -fx-text-fill: #1e293b;
+}
+
+/* Fix: dropdown popup list must have a solid opaque background,
+   otherwise fields/buttons behind it show through the list items. */
+.combo-box-popup .list-view {
+    -fx-background-color: #1e293b;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 8, 0, 0, 2);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+    -fx-padding: 8 12 8 12;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover,
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #ff7b00;
+    -fx-text-fill: white;
+}
+
+.list-view {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-control-inner-background: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10;
+    -fx-text-fill: white;
+}
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1e293b;
+}
+
+.tab {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10 20 10 20;
+}
+
+.tab .tab-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.tab:selected {
+    -fx-background-color: #ff7b00;
+}
